@@ -2,7 +2,8 @@ Package.describe({
   summary: 'A reactive table designed for Meteor',
   version: '0.8.13',
   name: 'ccapcom:reactive-table',
-  git: ''
+  git: '',
+  documentation: 'README.md'
 });
 
 Package.on_use(function (api) {
@@ -48,33 +49,4 @@ Package.on_test(function (api) {
     api.add_files('lib/server.js', 'server');
 
     api.export("ReactiveTable", ["client", "server"]);
-
-    api.use(['tinytest', 'test-helpers'], 'client');
-    api.add_files('test/helpers.js', ['client', 'server']);
-    api.add_files('test/test_collection_argument.js', 'client');
-    api.add_files('test/test_no_data_template.html', 'client');
-    api.add_files('test/test_settings.js', 'client');
-    api.add_files('test/test_fields_tmpl.html', 'client');
-    api.add_files('test/test_fields.js', 'client');
-  
-    api.use('accounts-password@1.0.6', ['client', 'server']);
-    api.add_files('test/test_reactivity_server.js', 'server');
-    api.add_files('test/test_reactivity.html', 'client');
-    api.add_files('test/test_reactivity.js', 'client');
-  
-    api.add_files('test/test_sorting.js', 'client');
-    api.add_files('test/test_filtering_server.js', 'server');
-    api.add_files('test/test_filtering.js', 'client');
-    api.add_files('test/test_pagination.js', 'client');
-    api.add_files('test/test_i18n.js', 'client');
-    api.add_files('test/test_events_tmpl.html', 'client');
-    api.add_files('test/test_events.js', 'client');
-    api.add_files('test/test_column_toggles.js', 'client');
-    api.add_files('test/test_multiple_tables.js', 'client');
-    api.add_files('test/test_template.html', 'client');
-    api.add_files('test/test_template.js', 'client');
-    api.add_files('test/test_custom_filters.js', 'client');
-
-    api.use("dburles:collection-helpers@1.0.1", "client");
-    api.add_files("test/test_compatibility.js", "client");
 });
