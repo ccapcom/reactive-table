@@ -25,6 +25,10 @@
 
 .table > thead > tr > th.reactive-table-add-column {
     border-bottom: none;
+	position: fixed;
+	background: #1976d3;
+	color: #fff;
+	padding: 9px 25px;
 }
 
 .reactive-table-navigation {
