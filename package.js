@@ -1,8 +1,8 @@
 Package.describe({
-  summary: "A reactive table designed for Meteor",
-  version: "0.8.13",
-  name: "ccapcom:reactive-table",
-  git: "https://github.com/ccapcom/reactive-table.git"
+  summary: 'A reactive table designed for Meteor',
+  version: '0.8.13',
+  name: 'ccapcom:reactive-table',
+  git: ''
 });
 
 Package.on_use(function (api) {
